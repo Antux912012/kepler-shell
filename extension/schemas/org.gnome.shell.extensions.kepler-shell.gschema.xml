@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+SPDX-FileCopyrightText: 2026 Antonio <https://github.com/kepler-shell>
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+<schemalist>
+  <schema id="org.gnome.shell.extensions.kepler-shell" path="/org/gnome/shell/extensions/kepler-shell/">
+    <!-- Taskbar Settings -->
+    <key name="taskbar-position" type="s">
+      <default>'bottom'</default>
+      <summary>Taskbar Position</summary>
+      <description>Sets the screen edge for the taskbar. Allowed values are 'bottom' and 'top'.</description>
+    </key>
+
+    <key name="taskbar-alignment" type="s">
+      <default>'center'</default>
+      <summary>Taskbar Alignment</summary>
+      <description>Sets the alignment of dock icons. Allowed values are 'center' and 'left'.</description>
+    </key>
+
+    <key name="taskbar-height" type="i">
+      <default>48</default>
+      <range min="36" max="64"/>
+      <summary>Taskbar Height</summary>
+      <description>Sets the height of the taskbar in pixels.</description>
+    </key>
+
+    <key name="icon-size" type="i">
+      <default>28</default>
+      <range min="20" max="48"/>
+      <summary>Application Icon Size</summary>
+      <description>Sets the size of dock application icons in pixels.</description>
+    </key>
+
+    <key name="pinned-apps" type="as">
+      <default>['org.gnome.Nautilus.desktop', 'org.gnome.Console.desktop', 'firefox.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Settings.desktop']</default>
+      <summary>Pinned Applications</summary>
+      <description>Stores the list of desktop file identifiers for pinned applications.</description>
+    </key>
+
+    <key name="show-running-apps" type="b">
+      <default>true</default>
+      <summary>Show Running Applications</summary>
+      <description>Controls whether unpinned active applications appear on the dock.</description>
+    </key>
+
+    <key name="clock-format" type="s">
+      <default>'%H:%M\n%d/%m/%Y'</default>
+      <summary>Clock Format String</summary>
+      <description>Specifies the GLib date and time format string for the taskbar clock.</description>
+    </key>
+
+    <!-- Theme and Appearance -->
+    <key name="theme-palette" type="s">
+      <default>'nord'</default>
+      <summary>Color Palette</summary>
+      <description>Sets the active color palette. Allowed values: 'nord', 'win11-blue', 'mica-dark', 'aurora', 'cyberpunk'.</description>
+    </key>
+
+    <key name="acrylic-opacity" type="d">
+      <default>0.82</default>
+      <range min="0.30" max="1.00"/>
+      <summary>Acrylic Opacity</summary>
+      <description>Sets the opacity fraction for taskbar and flyout acrylic surfaces.</description>
+    </key>
+
+    <key name="corner-radius" type="i">
+      <default>12</default>
+      <range min="0" max="24"/>
+      <summary>Corner Radius</summary>
+      <description>Sets the border radius in pixels for flyout menus and windows.</description>
+    </key>
+
+    <key name="flyout-margin" type="i">
+      <default>8</default>
+      <range min="0" max="32"/>
+      <summary>Flyout Detached Margin</summary>
+      <description>Sets the distance in pixels between the taskbar edge and flyout menus.</description>
+    </key>
+
+    <!-- Start Menu Settings -->
+    <key name="start-menu-width" type="i">
+      <default>640</default>
+      <range min="480" max="840"/>
+      <summary>Start Menu Width</summary>
+      <description>Sets the horizontal width in pixels of the Start Menu flyout.</description>
+    </key>
+
+    <key name="start-menu-height" type="i">
+      <default>680</default>
+      <range min="480" max="880"/>
+      <summary>Start Menu Height</summary>
+      <description>Sets the vertical height in pixels of the Start Menu flyout.</description>
+    </key>
+
+    <key name="show-recommended-files" type="b">
+      <default>true</default>
+      <summary>Show Recommended Files</summary>
+      <description>Controls whether recent files appear inside the Start Menu.</description>
+    </key>
+
+    <key name="max-recommended-files" type="i">
+      <default>6</default>
+      <range min="2" max="12"/>
+      <summary>Maximum Recommended Files</summary>
+      <description>Sets the maximum count of recent files shown in the Start Menu.</description>
+    </key>
+
+    <key name="enable-calculator" type="b">
+      <default>true</default>
+      <summary>Enable Search Math Calculator</summary>
+      <description>Controls whether mathematical expressions evaluate inside the search box.</description>
+    </key>
+
+    <!-- Snap Layouts -->
+    <key name="enable-snap-layouts" type="b">
+      <default>true</default>
+      <summary>Enable Snap Layouts</summary>
+      <description>Controls whether the window tiling snap layouts menu is enabled.</description>
+    </key>
+  </schema>
+</schemalist>

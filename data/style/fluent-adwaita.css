@@ -1,0 +1,256 @@
+/* Kepler Shell - Fluent Adwaita (Windows 11 inspired) Stylesheet */
+
+@define-color acrylic_surface rgba(46, 52, 64, 0.82);
+@define-color acrylic_border rgba(216, 222, 233, 0.14);
+@define-color acrylic_active #88c0d0;
+@define-color acrylic_hover rgba(255, 255, 255, 0.08);
+@define-color acrylic_pressed rgba(255, 255, 255, 0.04);
+@define-color text_primary #eceff4;
+@define-color text_secondary #d8dee9;
+@define-color text_muted #8892b0;
+
+/* Base Reset & Fonts */
+window.kepler-surface {
+    background-color: transparent;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Cantarell", sans-serif;
+    color: @text_primary;
+}
+
+/* Acrylic / Mica Container Styling */
+.fluent-acrylic {
+    background-color: @acrylic_surface;
+    border: 1px solid @acrylic_border;
+    border-radius: 12px;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.38), 0 2px 8px rgba(0, 0, 0, 0.22);
+}
+
+/* Taskbar Base Container */
+.kepler-taskbar {
+    background-color: rgba(36, 41, 51, 0.85);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    min-height: 48px;
+    padding: 0 8px;
+}
+
+.kepler-taskbar.dock-floating {
+    margin: 8px 16px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Taskbar App Icons & Buttons */
+.taskbar-button {
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    min-width: 40px;
+    min-height: 40px;
+    margin: 4px 2px;
+    padding: 2px 6px;
+    transition: all 180ms cubic-bezier(0.1, 0.9, 0.2, 1.0);
+}
+
+.taskbar-button:hover {
+    background-color: @acrylic_hover;
+}
+
+.taskbar-button:active {
+    background-color: @acrylic_pressed;
+    transform: scale(0.95);
+}
+
+/* Running & Active App Indicators (Win11 Pill) */
+.app-pill-container {
+    position: relative;
+}
+
+.app-pill-indicator {
+    min-width: 6px;
+    min-height: 3px;
+    border-radius: 2px;
+    margin-bottom: 2px;
+    background-color: @text_muted;
+    transition: width 200ms ease, background-color 200ms ease;
+}
+
+.app-pill-indicator.active {
+    min-width: 16px;
+    min-height: 3px;
+    background-color: @acrylic_active;
+}
+
+/* Start Button */
+.start-button {
+    background: transparent;
+    border-radius: 8px;
+    padding: 4px 8px;
+    margin: 4px 4px;
+    transition: all 160ms ease;
+}
+
+.start-button:hover {
+    background-color: @acrylic_hover;
+}
+
+.start-button:active {
+    transform: scale(0.92);
+}
+
+/* Systray Pill Container */
+.systray-pill {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 4px 12px;
+    margin: 6px 4px;
+    transition: background-color 150ms ease;
+}
+
+.systray-pill:hover {
+    background-color: @acrylic_hover;
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+.systray-clock {
+    font-size: 11px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Flyouts (Start Menu, Control Center) */
+.kepler-flyout {
+    margin: 8px;
+    padding: 16px;
+    border-radius: 12px;
+    background-color: rgba(38, 44, 54, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.50);
+}
+
+/* Start Menu Specifics */
+.start-search-bar {
+    background-color: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 20px;
+    padding: 8px 16px;
+    color: @text_primary;
+    transition: border-color 200ms ease;
+}
+
+.start-search-bar:focus-within {
+    border-color: @acrylic_active;
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.pinned-app-item {
+    border-radius: 8px;
+    padding: 10px;
+    margin: 4px;
+    transition: background-color 140ms ease;
+}
+
+.pinned-app-item:hover {
+    background-color: @acrylic_hover;
+}
+
+.recommended-file-item {
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin: 2px 0;
+    transition: background-color 140ms ease;
+}
+
+.recommended-file-item:hover {
+    background-color: @acrylic_hover;
+}
+
+/* Power Footer */
+.power-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 12px;
+    margin-top: 8px;
+}
+
+.avatar-badge {
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Quick Toggles (Control Center) */
+.quick-toggle-pill {
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 24px;
+    padding: 10px 14px;
+    min-height: 44px;
+    transition: all 180ms ease;
+}
+
+.quick-toggle-pill.active {
+    background-color: @acrylic_active;
+    color: #2e3440;
+    border-color: @acrylic_active;
+    font-weight: 600;
+}
+
+.quick-toggle-pill:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.quick-toggle-pill.active:hover {
+    background-color: #8fbcbb;
+}
+
+/* Fluent Sliders */
+scale.fluent-slider trough {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+    min-height: 4px;
+}
+
+scale.fluent-slider highlight {
+    background-color: @acrylic_active;
+    border-radius: 4px;
+    min-height: 4px;
+}
+
+scale.fluent-slider slider {
+    background-color: #eceff4;
+    border-radius: 50%;
+    min-width: 16px;
+    min-height: 16px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* OSD Minimal Pill */
+.osd-pill {
+    background-color: rgba(36, 41, 51, 0.90);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 20px;
+    padding: 8px 18px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+}
+
+/* Snap Layouts Overlay */
+.snap-overlay-window {
+    background-color: rgba(28, 33, 40, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.55);
+}
+
+.snap-zone-btn {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 6px;
+    min-width: 60px;
+    min-height: 50px;
+    margin: 4px;
+    transition: all 120ms ease;
+}
+
+.snap-zone-btn:hover {
+    background-color: @acrylic_active;
+    border-color: @acrylic_active;
+}

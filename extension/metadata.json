@@ -1,0 +1,16 @@
+{
+  "name": "Kepler Shell",
+  "description": "Windows 11 inspired desktop interface for GNOME Shell. Provides a bottom taskbar, centered application dock, start menu flyout, quick settings, and window snap layouts.",
+  "uuid": "kepler-shell@antonio.local",
+  "shell-version": [
+    "45",
+    "46",
+    "47",
+    "48",
+    "49",
+    "50"
+  ],
+  "settings-schema": "org.gnome.shell.extensions.kepler-shell",
+  "url": "https://github.com/kepler-shell/kepler-shell",
+  "version": 1
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Kepler Shell Mutter Bridge",
+  "description": "D-Bus bridge enabling Kepler Shell to communicate with GNOME Mutter compositor",
+  "uuid": "kepler-bridge@antonio.local",
+  "shell-version": [
+    "45",
+    "46",
+    "47",
+    "48"
+  ],
+  "url": "https://github.com/kepler-shell"
+}

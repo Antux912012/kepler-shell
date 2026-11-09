@@ -1,0 +1,12 @@
+# Rust build artifacts
+target/
+**/*.rs.bk
+
+# Compiled GSettings schemas
+*.compiled
+
+# Logs and temporary files
+*.log
+*.tmp
+*~
+.DS_Store

@@ -1,0 +1,226 @@
+/*
+ * SPDX-FileCopyrightText: 2026 Antonio <https://github.com/kepler-shell>
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
+
+/*
+ * File Responsibility: Provides visual style rules for Kepler Shell extension St widgets.
+ * Architecture Position: Loaded by GNOME Shell when this extension starts.
+ * Target Standard: Clutter and St CSS styling.
+ */
+
+/* Main Taskbar Container */
+.kepler-taskbar-panel {
+    background-color: rgba(30, 35, 45, 0.88);
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.35);
+}
+
+.kepler-taskbar-panel.top-dock {
+    border-top: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+/* Start Button */
+.kepler-start-button {
+    border-radius: 8px;
+    padding: 6px 10px;
+    margin: 4px 6px;
+    transition-duration: 180ms;
+}
+
+.kepler-start-button:hover {
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+.kepler-start-button:active {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Application Dock and Icon Buttons */
+.kepler-dock-item {
+    border-radius: 8px;
+    padding: 4px 8px;
+    margin: 3px 2px;
+    transition-duration: 150ms;
+}
+
+.kepler-dock-item:hover {
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+.kepler-dock-item:active {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+/* Running and Active Application Indicators */
+.kepler-pill-indicator {
+    height: 3px;
+    width: 6px;
+    border-radius: 2px;
+    background-color: rgba(216, 222, 233, 0.45);
+    margin-top: 2px;
+    transition-duration: 200ms;
+}
+
+.kepler-pill-indicator.active {
+    width: 16px;
+    background-color: #88c0d0;
+}
+
+/* Status Indicator Pill */
+.kepler-systray-pill {
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 20px;
+    padding: 4px 12px;
+    margin: 6px 8px;
+    transition-duration: 150ms;
+}
+
+.kepler-systray-pill:hover {
+    background-color: rgba(255, 255, 255, 0.14);
+    border-color: rgba(255, 255, 255, 0.20);
+}
+
+.kepler-clock-label {
+    font-size: 11px;
+    font-weight: 500;
+    text-align: center;
+    color: #eceff4;
+}
+
+/* Flyout Menus: Start Menu and Control Center */
+.kepler-flyout-window {
+    background-color: rgba(34, 40, 52, 0.94);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 12px;
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.55);
+    padding: 16px;
+}
+
+/* Search Input Box */
+.kepler-search-entry {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    padding: 8px 16px;
+    color: #eceff4;
+    font-size: 13px;
+}
+
+.kepler-search-entry:focus {
+    border-color: #88c0d0;
+    background-color: rgba(255, 255, 255, 0.14);
+}
+
+.kepler-calc-badge {
+    color: #88c0d0;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 4px 8px;
+}
+
+/* Pinned Grid Tile */
+.kepler-pinned-tile {
+    border-radius: 8px;
+    padding: 8px 10px;
+    margin: 4px;
+    transition-duration: 120ms;
+}
+
+.kepler-pinned-tile:hover {
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+.kepler-pinned-label {
+    font-size: 11px;
+    text-align: center;
+    color: #eceff4;
+    margin-top: 4px;
+}
+
+/* Recommended Files */
+.kepler-rec-item {
+    border-radius: 6px;
+    padding: 6px 10px;
+    margin: 2px 0;
+    transition-duration: 120ms;
+}
+
+.kepler-rec-item:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.kepler-rec-title {
+    font-size: 12px;
+    font-weight: 500;
+    color: #eceff4;
+}
+
+.kepler-rec-subtitle {
+    font-size: 10px;
+    color: #8892b0;
+}
+
+/* Power Footer */
+.kepler-power-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+    padding-top: 10px;
+    margin-top: 8px;
+}
+
+.kepler-power-btn {
+    border-radius: 6px;
+    padding: 6px;
+    margin: 2px;
+}
+
+.kepler-power-btn:hover {
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+/* Control Center Quick Toggles */
+.kepler-quick-toggle {
+    background-color: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 20px;
+    padding: 10px 14px;
+    margin: 4px;
+    transition-duration: 160ms;
+}
+
+.kepler-quick-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.kepler-quick-toggle.active {
+    background-color: #88c0d0;
+    color: #2e3440;
+    border-color: #88c0d0;
+}
+
+/* Snap Layouts Overlay */
+.kepler-snap-overlay {
+    background-color: rgba(24, 28, 36, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.60);
+}
+
+.kepler-snap-tile {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 6px;
+    min-width: 50px;
+    min-height: 44px;
+    margin: 3px;
+    transition-duration: 120ms;
+}
+
+.kepler-snap-tile:hover {
+    background-color: #88c0d0;
+    border-color: #88c0d0;
+}

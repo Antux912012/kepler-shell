@@ -1,0 +1,46 @@
+# Kepler Shell Configuration
+
+[general]
+autostart = true
+compositor_backend = "auto" # "auto", "mutter", or "wayland"
+
+[taskbar]
+position = "bottom"        # "bottom", "top"
+alignment = "center"        # "center", "left"
+height = 48
+icon_size = 28
+pinned_apps = [
+    "org.gnome.Nautilus",
+    "org.gnome.Console",
+    "firefox",
+    "org.gnome.TextEditor",
+    "org.gnome.Settings"
+]
+show_running_apps = true
+group_windows = true
+clock_format = "%H:%M\n%d/%m/%Y"
+
+[theme]
+palette = "nord"
+dark_mode = true
+acrylic = true
+blur_strength = 24
+flyout_margin = 8
+border_radius = 12
+
+[start_menu]
+width = 640
+height = 680
+search_placeholder = "Type here to search..."
+show_recommended = true
+max_recent_files = 6
+
+[control_center]
+width = 380
+show_calendar = true
+show_media_player = true
+
+[osd]
+timeout_ms = 1800
+width = 240
+height = 40

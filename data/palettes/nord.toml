@@ -1,0 +1,47 @@
+# Nord Palette for Kepler Shell
+[palette]
+name = "Nord"
+author = "Arctic Ice Studio"
+
+# Polar Night (Dark backgrounds)
+nord0 = "#2e3440" # Base dark
+nord1 = "#3b4252" # Elevated surface
+nord2 = "#434c5e" # Selection / Active
+nord3 = "#4c566a" # Muted text / Borders
+
+# Snow Storm (Light / Text)
+nord4 = "#d8dee9" # Primary text
+nord5 = "#e5e9f0" # High contrast text
+nord6 = "#eceff4" # Brightest text
+
+# Frost (Accents)
+nord7 = "#8fbcbb" # Frozen teal
+nord8 = "#88c0d0" # Frost cyan (Primary Accent)
+nord9 = "#81a1c1" # Glacial blue
+nord10 = "#5e81ac" # Deep polar blue
+
+# Aurora (Status)
+nord11 = "#bf616a" # Red (Alert / Error)
+nord12 = "#d08770" # Orange (Warning)
+nord13 = "#ebcb8b" # Yellow (Attention)
+nord14 = "#a3be8c" # Green (Success / Active)
+nord15 = "#b48ead" # Purple / Magenta
+
+[semantic]
+accent_color = "#88c0d0"
+accent_bg_color = "#88c0d0"
+accent_fg_color = "#2e3440"
+window_bg_color = "rgba(46, 52, 64, 0.78)"
+view_bg_color = "rgba(46, 52, 64, 0.85)"
+headerbar_bg_color = "rgba(59, 66, 82, 0.70)"
+popover_bg_color = "rgba(46, 52, 64, 0.88)"
+card_bg_color = "rgba(59, 66, 82, 0.65)"
+card_fg_color = "#eceff4"
+window_fg_color = "#eceff4"
+view_fg_color = "#eceff4"
+headerbar_fg_color = "#eceff4"
+popover_fg_color = "#eceff4"
+border_color = "rgba(216, 222, 233, 0.12)"
+border_active_color = "rgba(136, 192, 208, 0.60)"
+pill_indicator_color = "#88c0d0"
+pill_inactive_color = "#4c566a"
